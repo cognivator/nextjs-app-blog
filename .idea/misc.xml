@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownProjectSettings">
+    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" synchronizePreviewPosition="true" highlightPreviewType="NONE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="true" showSelectionInPreview="true" lastLayoutSetsDefault="false">
+      <PanelProvider>
+        <provider providerId="com.vladsch.md.nav.editor.javafx.html.panel" providerName="JavaFX WebView" />
+      </PanelProvider>
+    </PreviewSettings>
+    <ParserSettings gitHubSyntaxChange="false" correctedInvalidSettings="false" emojiShortcuts="0" emojiImages="0">
+      <PegdownExtensions>
+        <option name="AUTOLINKS" value="true" />
+        <option name="FENCED_CODE_BLOCKS" value="true" />
+        <option name="HARDWRAPS" value="true" />
+        <option name="INTELLIJ_DUMMY_IDENTIFIER" value="true" />
+        <option name="RELAXEDHRULES" value="true" />
+        <option name="TASKLISTITEMS" value="true" />
+      </PegdownExtensions>
+      <ParserOptions>
+        <option name="GITHUB_WIKI_LINKS" value="true" />
+        <option name="PRODUCTION_SPEC_PARSER" value="true" />
+      </ParserOptions>
+    </ParserSettings>
+    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" plantUmlConversion="0">
+      <GeneratorProvider>
+        <provider providerId="com.vladsch.md.nav.editor.javafx.html.generator" providerName="JavaFx HTML Generator" />
+      </GeneratorProvider>
+      <headerTop />
+      <headerBottom />
+      <bodyTop />
+      <bodyBottom />
+    </HtmlSettings>
+    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
+      <StylesheetProvider>
+        <provider providerId="com.vladsch.md.nav.editor.javafx.html.css" providerName="Default JavaFx Stylesheet" />
+      </StylesheetProvider>
+      <ScriptProviders />
+      <cssText>/*
+Copyright (c) Vladimir Schneider &lt;vladimir.schneider@gmail.com&gt;
+adapted and tweaked from https://github.com/sindresorhus/github-markdown-css
+
+Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com)
+
+The MIT License (MIT)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
+
+/*
+ * darcula color scheme - dark
+ * Colors and rendering only CSS to ease maintenance of multiple color schemes
+ */
+
+.markdown-body,
+.wiki-body {
+    font-family: Arial, Helvetica, &quot;Helvetica Neue&quot;, &quot;Segoe UI&quot;, freesans, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+   background-color: #2B2B2B;
+    color: #A9B7C6;
+}
+
+.boxed-group&gt;h3, .boxed-group .heading {
+    background-color: #444444;
+    border: 1px solid #888888;
+}
+
+#readme .markdown-body {
+    background-color: transparent;
+    border: 1px solid #888888;
+}
+
+#readme .wiki-body {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    color: #185BaE;
+}
+
+a.mail-link {
+    color:  #aa33bb;
+}
+
+a.absent {
+    color: #C34E7B;
+}
+
+abbr {
+   text-decoration: none;
+   border-bottom: 1px dashed #185BaE;
+}
+
+hr {
+    background-color: #999999;
+}
+
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+    color: #A9B7C6;
+}
+
+h1,
+h2 {
+    border-bottom: 1px solid #888888;
+}
+
+h6 {
+    color: #888888;
+}
+
+blockquote {
+    border-left: 4px solid #888888;
+    color: #888888;
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+    color: #888888;
+}
+
+th,
+td {
+    border: 1px solid #555555;
+}
+
+table thead tr {
+    background-color: #333333;
+}
+
+table tbody tr {
+    background-color: transparent;
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: #333333;
+}
+
+code {
+    background-color: rgba(255, 255, 255, 0.06);
+    /*color: #C34E7B;*/
+}
+
+.highlight pre,
+pre {
+    background-color: rgba(255,255,255,0.04);
+    border: 1px solid #999999;
+}
+
+pre code {
+    color: #A9B7C6;
+}
+
+kbd {
+    background-color: #383838;
+    border: solid 1px #999999;
+    box-shadow: inset 0 -1px 0 #999999;
+    color: #A9B7C6;
+}
+
+del {
+    /*text-decoration-color: #C34E7B;*/
+}</cssText>
+      <cssUriHistory />
+    </CssSettings>
+  </component>
+</project>
