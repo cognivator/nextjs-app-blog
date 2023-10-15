@@ -6,22 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "riteway": "riteway --require @babel/register '**/*.riteway.js' | tap-nirvana"
   },
   "dependencies": {
+    "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/register": "^7.22.15",
+    "@jest/globals": "^29.7.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
+    "babel-jest": "^29.7.0",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "jest": "^29.7.0",
+    "jest-extended": "^4.0.2",
+    "postcss": "^8",
+    "riteway": "^7.0.0",
+    "tailwindcss": "^3",
+    "tap-nirvana": "^1.1.0",
+    "tap-nirvana-extended": "^1.1.2",
+    "tap-spec": "^5.0.0",
+    "typescript": "^5"
   }
 }
