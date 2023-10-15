@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="testFiles" pattern="file:**/*.test.*||file:**/*.riteway.*" />
+</component>
